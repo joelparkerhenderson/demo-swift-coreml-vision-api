@@ -1,16 +1,8 @@
-//
-//  ViewController.swift
-//  Demo Swift CoreML Vision API
-//
-//  Created by Joel on 3/30/18.
-//  Copyright © 2018 JoelParkerHenderson.com. All rights reserved.
-//
-
 import UIKit
-import AVCaptureSession
-import Vision
+import AVFoundation // Provide AVCaptureDevice, AVCaptureVideoDataOutput, etc.
+import Vision //
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,7 +96,7 @@ class ViewController: UIViewController {
             guard let results = finishedRequest.results as? [VNClassificationObservation] else { return }
             guard let Observation = results.first else { return }
             DispatchQueue.main.async(execute: {
-                self.label.text = "\(Observation.identifier)"
+                self.modelPredictionLabel.text = "\(Observation.identifier)"
             })
         }
         

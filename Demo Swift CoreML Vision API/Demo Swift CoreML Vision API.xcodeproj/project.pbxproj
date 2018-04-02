@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D5797142072C83A007EE13C /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5797132072C83A007EE13C /* CoreML.framework */; };
+		5D5797182072C891007EE13C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5797172072C891007EE13C /* AVFoundation.framework */; };
+		5D57971A2072CBC4007EE13C /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5797192072CBC4007EE13C /* Vision.framework */; };
 		5D8265ED206EF50E00D1A582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8265EC206EF50E00D1A582 /* AppDelegate.swift */; };
 		5D8265EF206EF50E00D1A582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8265EE206EF50E00D1A582 /* ViewController.swift */; };
 		5D8265F5206EF50E00D1A582 /* Demo_Swift_CoreML_Vision_API.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D8265F3206EF50E00D1A582 /* Demo_Swift_CoreML_Vision_API.xcdatamodeld */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D5797132072C83A007EE13C /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		5D5797172072C891007EE13C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5D5797192072CBC4007EE13C /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
 		5D8265E9206EF50E00D1A582 /* Demo Swift CoreML Vision API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Swift CoreML Vision API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8265EC206EF50E00D1A582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D8265EE206EF50E00D1A582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D57971A2072CBC4007EE13C /* Vision.framework in Frameworks */,
+				5D5797182072C891007EE13C /* AVFoundation.framework in Frameworks */,
+				5D5797142072C83A007EE13C /* CoreML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +85,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D5797122072C83A007EE13C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D5797192072CBC4007EE13C /* Vision.framework */,
+				5D5797172072C891007EE13C /* AVFoundation.framework */,
+				5D5797132072C83A007EE13C /* CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5D8265E0206EF50E00D1A582 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,7 @@
 				5D826603206EF50E00D1A582 /* Demo Swift CoreML Vision APITests */,
 				5D82660E206EF50E00D1A582 /* Demo Swift CoreML Vision APIUITests */,
 				5D8265EA206EF50E00D1A582 /* Products */,
+				5D5797122072C83A007EE13C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,7 +211,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = JoelParkerHenderson.com;
 				TargetAttributes = {
 					5D8265E8206EF50E00D1A582 = {
@@ -325,6 +345,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -332,6 +353,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -359,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -382,6 +404,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -389,6 +412,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -410,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

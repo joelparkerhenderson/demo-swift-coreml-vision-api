@@ -1,6 +1,6 @@
-# Demo Swift Hello World
+# Demo Swift CoreML Vision API
 
-<img src="README.png" alt="Hello World" style="width: 100%;"/>
+<img src="README.png" alt="Demo Swift CoreML Vision API" style="width: 100%;"/>
 
 This demonstration shows:
 
@@ -93,9 +93,25 @@ Delete the storyboard:
 
   * Delete the entry.
 
+Add frameworks for "AVFoundation", "CoreML", "Vision":
+
+  * In the project navigator, select your project.
+
+  * Select your target.
+
+  * Select the "Build Phases" tab.
+
+  * Open "Link Binaries With Libraries" expander.
+
+  * Click the + button.
+
+  * Select your framework.
+
+  * (optional) Drag and drop the added framework to the "Frameworks" group.
+
 Add the machine learning model:
 
-  * Download 
+  * Download the model.
 
   * Add the model to your Xcode project by dragging the model into the project navigator.
 
