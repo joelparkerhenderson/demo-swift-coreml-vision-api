@@ -20,7 +20,7 @@ To use this project:
 
 ## ViewController
 
-The most important file is <a href="Demo%20Swift%20CoreML%20Vision%20API/Demo%20Swift%20CoreML%20Vision%20API/ViewController.swift>ViewController.swift</a>
+The most important file is <a href="Demo%20Swift%20CoreML%20Vision%20API/Demo%20Swift%20CoreML%20Vision%20API/ViewController.swift">ViewController.swift</a>
 
 
 ## Create the project
