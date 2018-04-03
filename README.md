@@ -20,8 +20,8 @@ To use this project:
 
 ## ViewController
 
-The most important file is [ViewController.swift](demo_swift_coreml_vision_api/Demo Swift CoreML Vision API/Demo Swift CoreML Vision API/ViewController.swift)
-t
+The most important file is <a href="Demo%20Swift%20CoreML%20Vision%20API/Demo%20Swift%20CoreML%20Vision%20API/ViewController.swift>ViewController.swift</a>
+
 
 ## Create the project
 
