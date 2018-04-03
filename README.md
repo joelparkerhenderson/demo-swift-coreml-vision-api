@@ -120,8 +120,8 @@ Add the machine learning model:
 
   * Add the model to your Xcode project by dragging the model into the project navigator.
 
-  * You can see information about the model—including the model type and its expected inputs and outputs—by opening the model in Xcode. The inputs to the model are the number of solar panels and greenhouses, as well as the lot size of the habitat (in acres). The output of the model is the predicted price of the habitat.
-
+  * You can see information about the model — including the model type and its expected inputs and outputs — by opening the model in Xcode. 
+  
   * Xcode also uses information about the model’s inputs and outputs to automatically generate a custom programmatic interface to the model, which you use to interact with the model in your code. For a model named "Foo" with a file name "Foo.mlmodel", Xcode generates interfaces to represent the model ("Foo"), the model’s inputs ("FooInput"), and the model’s output ("FooOutput").
 
 
@@ -131,7 +131,7 @@ Run the project.
 
   * Xcode → Product → Run
 
-The Simulator launches.
+The app launches.
 
   * Congratulations! You're successful!
   
@@ -141,6 +141,6 @@ The Simulator launches.
 * Package: demo_swift_coreml_vision_api
 * Version: 1.0.0
 * Created: 2018-03-29
-* Updated: 2018-03-30
+* Updated: 2018-04-02  
 * License: BSD, GPL, MIT
 * Contact: Joel Parker Henderson (http://joelparkerhenderson.com)
